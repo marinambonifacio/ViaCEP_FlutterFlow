@@ -44,7 +44,7 @@ class _SobreWidgetState extends State<SobreWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF5F0ED),
         drawer: InkWell(
           splashColor: Colors.transparent,
           focusColor: Colors.transparent,
@@ -108,7 +108,7 @@ class _SobreWidgetState extends State<SobreWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.montserrat(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -167,7 +167,7 @@ class _SobreWidgetState extends State<SobreWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.montserrat(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -224,7 +224,7 @@ class _SobreWidgetState extends State<SobreWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.interTight(
+                                            font: GoogleFonts.montserrat(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
@@ -293,7 +293,7 @@ class _SobreWidgetState extends State<SobreWidget> {
           title: Text(
             'Sobre',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  font: GoogleFonts.interTight(
+                  font: GoogleFonts.montserrat(
                     fontWeight:
                         FlutterFlowTheme.of(context).headlineMedium.fontWeight,
                     fontStyle:
@@ -319,49 +319,30 @@ class _SobreWidgetState extends State<SobreWidget> {
               width: double.infinity,
               height: 740.9,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0xFFF5F0ED),
               ),
               child: Stack(
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: 713.0,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF5F0ED),
-                        borderRadius: BorderRadius.circular(10.0),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: Stack(
-                        children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 10.0, 10.0, 0.0),
-                            child: Text(
-                              'O Via CEP é um webservice gratuito e público de alto desempenho para consulta de Código de Endereçamento Postal (CEP) do Brasil e preencher automaticamente campos como logradouro, bairro, região, estado e etc.',
-                              style: FlutterFlowTheme.of(context)
+                        EdgeInsetsDirectional.fromSTEB(20.0, 30.0, 20.0, 0.0),
+                    child: Text(
+                      'O Via CEP é um webservice gratuito e público de alto desempenho para consulta de Código de Endereçamento Postal (CEP) do Brasil e preencher automaticamente campos como logradouro, bairro, região, estado e etc.',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            font: GoogleFonts.montserrat(
+                              fontWeight: FontWeight.w600,
+                              fontStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
-                                  .override(
-                                    font: GoogleFonts.montserrat(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.black,
-                                    fontSize: 18.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
-                                  ),
+                                  .fontStyle,
                             ),
+                            color: Colors.black,
+                            fontSize: 20.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w600,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
                           ),
-                        ],
-                      ),
                     ),
                   ),
                 ],

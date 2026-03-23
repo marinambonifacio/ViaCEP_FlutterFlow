@@ -61,7 +61,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF5F0ED),
         drawer: InkWell(
           splashColor: Colors.transparent,
           focusColor: Colors.transparent,
@@ -146,7 +146,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.montserrat(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -205,7 +205,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.montserrat(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -262,7 +262,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.interTight(
+                                            font: GoogleFonts.montserrat(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
@@ -320,7 +320,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             child: Text(
               'Consulte CEP',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    font: GoogleFonts.interTight(
+                    font: GoogleFonts.montserrat(
                       fontWeight: FlutterFlowTheme.of(context)
                           .headlineMedium
                           .fontWeight,
@@ -349,23 +349,22 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 Container(
                   height: 740.0,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(
-                      color: Colors.white,
-                    ),
+                    color: Color(0xFFF5F0ED),
                   ),
                   child: Stack(
                     children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            10.0, 10.0, 10.0, 0.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/ViaCEP.png',
-                            width: double.infinity,
-                            height: 174.3,
-                            fit: BoxFit.cover,
+                      Align(
+                        alignment: AlignmentDirectional(-0.04, -0.99),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              15.0, 30.0, 15.0, 0.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8.0),
+                            child: Image.asset(
+                              'assets/images/ViaCEP.png',
+                              height: 174.3,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
@@ -373,9 +372,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 230.0, 10.0, 0.0),
+                              20.0, 230.0, 20.0, 0.0),
                           child: Container(
-                            width: 400.0,
+                            width: double.infinity,
                             child: TextFormField(
                               controller: _model.textFieldCEPTextController,
                               focusNode: _model.textFieldCEPFocusNode,
@@ -429,7 +428,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -451,7 +450,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -497,12 +496,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
-                                fillColor: Colors.white,
+                                fillColor: Color(0xFFF5F0ED),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.montserrat(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .fontWeight,
@@ -546,9 +545,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 300.0, 10.0, 0.0),
+                              20.0, 300.0, 20.0, 0.0),
                           child: Container(
-                            width: 400.0,
+                            width: double.infinity,
                             child: TextFormField(
                               controller: _model.textFieldRuaTextController,
                               focusNode: _model.textFieldRuaFocusNode,
@@ -561,7 +560,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -582,7 +581,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -628,12 +627,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
-                                fillColor: Colors.white,
+                                fillColor: Color(0xFFF5F0ED),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.montserrat(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -664,9 +663,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 370.0, 10.0, 0.0),
+                              20.0, 370.0, 20.0, 0.0),
                           child: Container(
-                            width: 400.0,
+                            width: double.infinity,
                             child: TextFormField(
                               controller: _model.textFieldBairroTextController,
                               focusNode: _model.textFieldBairroFocusNode,
@@ -679,7 +678,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -700,7 +699,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -746,12 +745,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
-                                fillColor: Colors.white,
+                                fillColor: Color(0xFFF5F0ED),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.montserrat(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -782,9 +781,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 440.0, 10.0, 0.0),
+                              20.0, 440.0, 20.0, 0.0),
                           child: Container(
-                            width: 400.0,
+                            width: double.infinity,
                             child: TextFormField(
                               controller: _model.textFieldCidadeTextController,
                               focusNode: _model.textFieldCidadeFocusNode,
@@ -797,7 +796,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -818,7 +817,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -864,12 +863,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
-                                fillColor: Colors.white,
+                                fillColor: Color(0xFFF5F0ED),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.montserrat(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -900,9 +899,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         alignment: AlignmentDirectional(-1.0, -1.0),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 510.0, 10.0, 0.0),
+                              20.0, 510.0, 20.0, 0.0),
                           child: Container(
-                            width: 400.0,
+                            width: double.infinity,
                             child: TextFormField(
                               controller: _model.textFieldUFTextController,
                               focusNode: _model.textFieldUFFocusNode,
@@ -915,7 +914,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -936,7 +935,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.montserrat(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -982,12 +981,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
-                                fillColor: Colors.white,
+                                fillColor: Color(0xFFF5F0ED),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.montserrat(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,

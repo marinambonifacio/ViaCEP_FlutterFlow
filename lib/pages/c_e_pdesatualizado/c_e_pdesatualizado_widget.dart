@@ -45,7 +45,7 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF5F0ED),
         drawer: InkWell(
           splashColor: Colors.transparent,
           focusColor: Colors.transparent,
@@ -130,7 +130,7 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.montserrat(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -189,7 +189,7 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.montserrat(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -246,7 +246,7 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.interTight(
+                                            font: GoogleFonts.montserrat(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
@@ -317,7 +317,7 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
             child: Text(
               'CEP desatualizado?',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    font: GoogleFonts.interTight(
+                    font: GoogleFonts.montserrat(
                       fontWeight: FlutterFlowTheme.of(context)
                           .headlineMedium
                           .fontWeight,
@@ -343,77 +343,65 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
           children: [
             Container(
               width: double.infinity,
-              height: 740.9,
+              height: 740.0,
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
               child: Stack(
                 children: [
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: 716.2,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF5F0ED),
-                        borderRadius: BorderRadius.circular(10.0),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: Stack(
-                        children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 40.0, 20.0, 0.0),
-                            child: Text(
-                              'Localizou um CEP com\ninformações desatualizadas? ',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    font: GoogleFonts.montserrat(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.black,
-                                    fontSize: 22.0,
-                                    letterSpacing: 0.0,
+                  Container(
+                    width: double.infinity,
+                    height: 850.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF5F0ED),
+                      borderRadius: BorderRadius.circular(0.0),
+                      shape: BoxShape.rectangle,
+                    ),
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              20.0, 30.0, 20.0, 0.0),
+                          child: Text(
+                            'Localizou um CEP com informações desatualizadas? ',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  font: GoogleFonts.montserrat(
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                            ),
+                                  color: Colors.black,
+                                  fontSize: 20.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.w600,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
+                                ),
                           ),
-                          Align(
-                            alignment: AlignmentDirectional(-0.03, -0.68),
-                            child: FFButtonWidget(
-                              onPressed: () async {
-                                await launchURL('https://viacep.com.br/cep/');
-                              },
-                              text: 'Clique aqui para atualizar',
-                              options: FFButtonOptions(
-                                width: 343.8,
-                                height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 0.0, 16.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFF008202),
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .titleSmall
-                                    .override(
-                                      font: GoogleFonts.montserrat(
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleSmall
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleSmall
-                                            .fontStyle,
-                                      ),
-                                      color: Colors.white,
-                                      letterSpacing: 0.0,
+                        ),
+                        Align(
+                          alignment: AlignmentDirectional(-0.03, -0.68),
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              await launchURL('https://viacep.com.br/cep/');
+                            },
+                            text: 'Clique aqui para atualizar',
+                            options: FFButtonOptions(
+                              width: 343.8,
+                              height: 40.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 16.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: Color(0xFF008202),
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    font: GoogleFonts.montserrat(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontWeight,
@@ -421,13 +409,22 @@ class _CEPdesatualizadoWidgetState extends State<CEPdesatualizadoWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                elevation: 0.0,
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
+                                    color: Colors.white,
+                                    fontSize: 16.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
+                                  ),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
