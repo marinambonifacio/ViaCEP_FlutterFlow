@@ -13,7 +13,6 @@ Durante o desenvolvimento deste projeto foram explorados conceitos como:
 # 👨‍💻 Autora
 Marina Bonifácio
 
-Um novo projeto Flutter.
 GitHub: https://github.com/marinambonifacio
 # 📱 Captura de tela
 <img width="1920" height="919" alt="ViaCEP_FF" src="https://github.com/user-attachments/assets/bec8a223-266b-4a76-9bf9-fa0b8e986f85" />
